@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang= 'en'>
+<head>
+<meta characset= 'UTF-8'/>
+<title>✧✦Here is a quiz!!✧✦</title>
+ <link rel="icon" href="qq.ico" type="image/x-icon"/>
+</head>
+<body style= 'background-color:#e0762f; border:15px dotted #52eb87'>
+<a href= 'ready.html'style= 'color:#3b132f'>Back to "Are you ready?"</a>
+<script>
+//This is the info that I am providing in my buttons.
+function askq(question,correct){
+var ans=prompt(question);
+if(ans==correct) alert("Correct");
+else if(ans=="I don't know") alert("It's okay that you don't know the answer!");
+else alert("Incorrect")
+}
+</script>
+<!---Here is my title and instructions.--->
+<div style='border:13px dashed #7190d9; text-align:center; color:#FFFFFF; background-color:#000000'><h1>Quiz</h1></div>
+<div style= 'background-color:#1bd4f5; border: 12px double #b3b8f5'>
+<p style= 'text-align:center'>Intructions:</p>
+<p>Click or tap on these buttons to get questions.<br/> Even though the questions are numbered, you can go in any order you want.</p>
+<hr/>
+<p style= 'text-align:center'>Questions:</p>
+<!---Here are my questions.--->
+<ul>
+<li><button onclick= 'askq("What is the capital of California?","Sacramento")'>Question 1</button><br/></li>
+<li><button onclick= 'askq("What is the capital of India?","New Delhi")'>Question 2</button><br/></li>
+<li><button onclick= 'askq("How many colors are there in a rainbow?","7")'>Question 3</button><br/>
+<li><button onclick= 'askq("In the Indian mythological epic Mahabharata, who killed Shakuni?","Sahadev")'>Question 4</button><br/></li>
+<li><button onclick= 'askq("Which character in Harry Potter has an animagi who is a black dog?","Sirius Black")'>Question 5</button><br/></li>
+<li><button onclick= 'askq("What is the most populated city in the United States of America?","New York City")'>Question 6</button><br/></li>
+<li><button onclick= 'askq("Who is the the fastest man in the world?","Usain Bolt")'>Question 7</button><br/></li>
+<li><button onclick= 'askq("How many faces does a Dodecahedron have?","12")'>Question 8</button><br/></li>
+<li><button onclick= 'askq("What is the capital of Mexico?","Mexico City")'>Question 9</button><br/></li>
+<li><button onclick= 'askq("What software company is headquartered in Redmond, Washington?","Microsoft")'>Question 10</button><br/></li>
+<li><button onclick= 'askq("What is a word, phrase, number, or other sequence of characters that reads the same backward as forward called?","A palindrome")'>Question 11</button><br/></li>
+<li><button onclick= 'askq("What is the most common surname in the United States?","Smith")'>Question 12</button><br/></li>
+</ul>
+</div>
+</body>
+</html>
